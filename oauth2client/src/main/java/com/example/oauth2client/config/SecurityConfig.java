@@ -17,7 +17,7 @@ public class SecurityConfig {
                         authorizeRequests.anyRequest().authenticated()
                 )
                 .oauth2Login(oauth2Login ->
-                        oauth2Login.loginPage("/oauth2/authorization/public-client"))
+                        oauth2Login.loginPage("login/oauth2/authorization/public-client"))
                 .oauth2Client(withDefaults());
         return http.build();
     }

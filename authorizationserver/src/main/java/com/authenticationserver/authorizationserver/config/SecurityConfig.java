@@ -83,8 +83,8 @@ public class SecurityConfig {
                 .clientSecret("secret")
                 .scope(OidcScopes.OPENID)
                 .scope(OidcScopes.PROFILE)
-                .redirectUri("http://127.0.0.1:8080/login/oauth2/code/public-client")
-                .redirectUri("http://127.0.0.1:8080/authorized")
+                .redirectUri("http://localhost:8080/login/oauth2/code/public-client")
+                .redirectUri("http://localhost:8080/authorized")
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
                 .authorizationGrantTypes(
                         grantType -> {
